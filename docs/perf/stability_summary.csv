@@ -1,0 +1,8 @@
+﻿item,plain_meaning,result,how_to_reproduce,record_note
+compiler_warnings_W4,"컴파일러가 가장 엄격한 단계(/W4)로 코드를 검사했을 때 나온 경고 수",0,"scripts\build.bat build x64-release (전체 재빌드)","프로젝트 기록(2026-11)의 값. 이 CSV를 만들며 다시 측정하지 않음"
+asan_errors,"AddressSanitizer(ASan, 실행 중 잘못된 메모리 접근을 잡아 주는 도구)로 테스트와 벤치를 돌렸을 때 발견된 오류 수",0,"scripts\build.bat test x64-asan (ctest 7개)","프로젝트 기록(2026-11)의 값. 다시 측정하지 않음"
+asan_detects_pool_misuse,"풀에 반납한 칸을 다시 읽는 실수를 ASan이 실제로 잡는지 확인한 결과(잡지 못하는 설정에서는 못 잡음을 대조로 확인)",detected,"tests/pool_asan_probe.cpp (x64-asan의 ctest 프로브 3개)","프로젝트 기록(2026-11)의 값. 다시 측정하지 않음"
+fuzz_inputs_total,"무작위로 만든 JSON 입력을 파서에 넣어 본 횟수(libFuzzer, 두 번 실행 313027+369094)",682121,"out\build\x64-asan\json_fuzz.exe <코퍼스 폴더> -max_total_time=120 -max_len=4096","프로젝트 기록(2026-11)의 값. 퍼징 약 5분 분량으로 '버그 없음'의 증명은 아님"
+fuzz_crashes,"위 무작위 입력으로 파서가 죽거나 멈춘 횟수",0,"위와 동일","프로젝트 기록(2026-11)의 값"
+memory_leak_bytes,"Debug 빌드 종료 시 C 런타임이 보고한 메모리 누수량(일부러 28바이트를 새게 해 보고되는지 확인한 뒤 제거)",0,"scripts\build.bat test x64-debug 후 stderr 확인","프로젝트 기록(2026-11)의 값. 다시 측정하지 않음"
+unit_test_programs,"단위 테스트 실행 파일 수(json 136 + world 167 + pool 34 + grid 19 검사 항목)",4,"scripts\build.bat test x64-release","기록된 검사 항목 수. 이 저장소(주석 제거본)를 새로 빌드해 4종 모두 통과(종료 코드 0)를 확인함"

@@ -23,3 +23,15 @@ slide,comparison,label,baseline,runs,avg_ms,move_ms,collision_ms,grid_build_ms,c
 5,"rebuild cost breakdown (default data, N=10000, 15 rounds per variant)",breakdown_no_floor,breakdown_base_b,15,0.1009,0.0386,0.0557,0.0446,87.0,0.000,577572ee1c90351a,-6.9,-14.1,401-415
 5,"std::floor removal applied (default data, N=10000, 15 rounds)",floor_before,,15,0.1101,0.0390,0.0636,0.0522,87.0,0.000,577572ee1c90351a,,,416-430
 5,"std::floor removal applied (default data, N=10000, 15 rounds)",floor_after,floor_before,15,0.1018,0.0388,0.0569,0.0456,87.0,0.000,577572ee1c90351a,-7.5,-12.7,446-460
+5,"remaining gap after pool, session A (legacy_v1 data, N=10000, 15 rounds)",gapA_v1_naive,,15,0.2039,0.0372,0.1614,0.0000,150244.8,1.881,8fff949560f7460e,,,551-565
+5,"remaining gap after pool, session A (legacy_v1 data, N=10000, 15 rounds)",gapA_v2_pool,gapA_v1_naive,15,0.2245,0.0367,0.1811,0.0000,150244.8,0.000,8fff949560f7460e,10.1,,566-580
+5,"remaining gap after pool, session A (legacy_v1 data, N=10000, 15 rounds)",gapA_v3_naive,gapA_v1_naive,15,0.2241,0.0374,0.1793,0.0000,150244.8,0.000,8fff949560f7460e,9.9,,581-595
+5,"remaining gap after pool, session A (legacy_v1 data, N=10000, 15 rounds)",gapA_v1_same_exe_AA,gapA_v1_naive,15,0.2031,0.0377,0.1598,0.0000,150244.8,1.881,8fff949560f7460e,-0.4,,596-610
+5,"remaining gap after pool, session B (legacy_v1 data, N=10000, 15 rounds)",gapB_v1_naive,,15,0.1988,0.0363,0.1572,0.0000,150244.8,1.881,8fff949560f7460e,,,611-625
+5,"remaining gap after pool, session B (legacy_v1 data, N=10000, 15 rounds)",gapB_v2_pool,gapB_v1_naive,15,0.2169,0.0357,0.1744,0.0000,150244.8,0.000,8fff949560f7460e,9.1,,626-640
+5,"remaining gap after pool, session B (legacy_v1 data, N=10000, 15 rounds)",gapB_v3_naive,gapB_v1_naive,15,0.2193,0.0359,0.1759,0.0000,150244.8,0.000,8fff949560f7460e,10.4,,641-655
+5,"remaining gap after pool, session B (legacy_v1 data, N=10000, 15 rounds)",gapB_v1_same_exe_AA,gapB_v1_naive,15,0.1990,0.0363,0.1578,0.0000,150244.8,1.881,8fff949560f7460e,0.1,,656-670
+5,"remaining gap after pool, session C (legacy_v1 data, N=10000, 15 rounds)",gapC_v1_naive,,15,0.1981,0.0363,0.1565,0.0000,150244.8,1.881,8fff949560f7460e,,,671-685
+5,"remaining gap after pool, session C (legacy_v1 data, N=10000, 15 rounds)",gapC_v2_pool,gapC_v1_naive,15,0.2178,0.0356,0.1754,0.0000,150244.8,0.000,8fff949560f7460e,10.0,,686-700
+5,"remaining gap after pool, session C (legacy_v1 data, N=10000, 15 rounds)",gapC_v3_naive,gapC_v1_naive,15,0.2175,0.0357,0.1743,0.0000,150244.8,0.000,8fff949560f7460e,9.8,,701-715
+5,"remaining gap after pool, session C (legacy_v1 data, N=10000, 15 rounds)",gapC_v1_same_exe_AA,gapC_v1_naive,15,0.1983,0.0366,0.1564,0.0000,150244.8,1.881,8fff949560f7460e,0.1,,716-730
