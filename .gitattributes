@@ -1,0 +1,9 @@
+# Line endings: LF in the repo and in working copies, except Windows scripts that need CRLF.
+# (Avoids LF/CRLF churn and keeps the data file hash used by the benchmark CSV stable.)
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.exe binary
+*.dll binary
+*.lib binary
+*.pdb binary
