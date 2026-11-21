@@ -1,0 +1,7 @@
+{
+  "waves": [
+    { "id": 1, "archetype": 1, "count": 12, "mode": "maintain" },
+    { "id": 2, "archetype": 2, "count": 6, "mode": "maintain" },
+    { "id": 3, "archetype": 3, "count": 2, "mode": "maintain" }
+  ]
+}

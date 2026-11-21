@@ -1,0 +1,7 @@
+{
+  "enemies": [
+    { "id": 1, "name": "grunt", "speed": 80, "radius": 16, "hp": 1 },
+    { "id": 2, "name": "swarm", "speed": 140, "radius": 8, "hp": 1 },
+    { "id": 3, "name": "brute", "speed": 40, "radius": 32, "hp": 3 }
+  ]
+}

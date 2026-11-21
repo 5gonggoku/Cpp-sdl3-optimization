@@ -1,0 +1,5 @@
+{
+  "enemies": [
+    { "id": 1, "name": "grunt", "speed": 80, "radius": 16, "hp": 1 }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "waves": [
+    { "id": 1, "archetype": 1, "count": 20, "mode": "maintain" }
+  ]
+}

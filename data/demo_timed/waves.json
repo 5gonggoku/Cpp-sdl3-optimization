@@ -1,0 +1,7 @@
+{
+  "waves": [
+    { "id": 1, "archetype": 1, "count": 10, "mode": "maintain" },
+    { "id": 2, "archetype": 2, "count": 8, "mode": "timed", "start": 5, "interval": 10, "repeat": 3 },
+    { "id": 3, "archetype": 3, "count": 2, "mode": "timed", "start": 15, "interval": 20, "repeat": 2 }
+  ]
+}
